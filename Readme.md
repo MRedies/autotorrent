@@ -1,5 +1,5 @@
 ### Howto
-You must create a json file with your login information like this:
+You must create a json file, called ```config.json``` with your login information like this:
 ```json
 {
     "user"      : "username",
