@@ -1,0 +1,5 @@
+{
+    "user"      : "username",
+    "password"  : "supersecret",
+    "dl_folder" : "/home/username/Downloads/"
+}
