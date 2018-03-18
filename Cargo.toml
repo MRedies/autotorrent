@@ -1,6 +1,0 @@
-[package]
-name = "autotorrent"
-version = "0.1.0"
-authors = ["Matthias Redies <matthias.redies@posteo.de>"]
-
-[dependencies]
