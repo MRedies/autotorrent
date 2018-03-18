@@ -66,11 +66,13 @@ class alldebrid:
 
 
     def sync(self):
+        g_print = lambda text: print('\033[92m' + text + '\033[0m')
+
         for torr in self.get_torrents():
             if(torr["statusCode"] == 4):
                 filename = self.largest_filename(torr)
                 if(not(os.path.exists(self.dl_folder + filename))):
                     self.download_largest(torr)
                 else:
-                    print("{} already downloaded".format(filename))
+                    g_print("{} already downloaded".format(filename))
         
