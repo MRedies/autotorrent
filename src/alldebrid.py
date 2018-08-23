@@ -41,8 +41,8 @@ class alldebrid:
             req_url = "https://api.alldebrid.com/link/unlock?agent=mySoft&token={}&link={}".format(self.token, link)
             r = requests.get(req_url).json()
             if r["success"]:
-                if(r["infos"]["filesize"] > max_sz):
-                    max_sz  = r["infos"]["filesize"]
+                if(int(r["infos"]["filesize"]) > max_sz):
+                    max_sz  = int(r["infos"]["filesize"])
                     max_idx = idx
             else:
                 raise Exception("couldn't get link")
